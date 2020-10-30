@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1015966F254BED8A0082E987 /* tempViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1015966E254BED8A0082E987 /* tempViewController.swift */; };
 		10C88691254A910000345C11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C88690254A910000345C11 /* AppDelegate.swift */; };
 		10C88693254A910000345C11 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C88692254A910000345C11 /* SceneDelegate.swift */; };
 		10C88695254A910000345C11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C88694254A910000345C11 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1015966E254BED8A0082E987 /* tempViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tempViewController.swift; sourceTree = "<group>"; };
 		10C8868D254A910000345C11 /* week2Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = week2Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10C88690254A910000345C11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10C88692254A910000345C11 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				10C88699254A910100345C11 /* Assets.xcassets */,
 				10C8869B254A910100345C11 /* LaunchScreen.storyboard */,
 				10C8869E254A910100345C11 /* Info.plist */,
+				1015966E254BED8A0082E987 /* tempViewController.swift */,
 			);
 			path = week2Assignment;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1015966F254BED8A0082E987 /* tempViewController.swift in Sources */,
 				10C88695254A910000345C11 /* ViewController.swift in Sources */,
 				10C88691254A910000345C11 /* AppDelegate.swift in Sources */,
 				10C88693254A910000345C11 /* SceneDelegate.swift in Sources */,
