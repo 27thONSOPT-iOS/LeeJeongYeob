@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -44,126 +43,16 @@
                                     <constraint firstItem="qhW-2d-QiB" firstAttribute="leading" secondItem="lGh-NU-xLy" secondAttribute="trailing" constant="172" id="r9Y-4P-1Xa"/>
                                 </constraints>
                             </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="D6G-Iv-EAv">
-                                <rect key="frame" x="0.0" y="132" width="414" height="730"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qRQ-AU-g9k">
-                                    <size key="itemSize" width="128" height="216"/>
-                                    <size key="headerReferenceSize" width="50" height="196"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageCollectionViewCell" id="mlz-i3-Mwo" customClass="ImageCollectionViewCell" customModule="week3Assignment" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="196" width="200" height="225"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="ImageCollectionViewCell" insetsLayoutMarginsFromSafeArea="NO" id="vXC-Mx-Vvb">
-                                            <rect key="frame" x="0.0" y="0.0" width="200" height="225"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sfm-7P-ykc">
-                                                    <rect key="frame" x="0.0" y="0.0" width="200" height="150"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="150" id="22n-fr-C7X"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7M5-ov-d65">
-                                                    <rect key="frame" x="7" y="163" width="187" height="34"/>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                    <string key="text">#hereis#아요#내꿈은
-#사과농장#ENFP</string>
-                                                    <color key="textColor" systemColor="labelColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                </textView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="EEJ-6K-FEw">
-                                                    <rect key="frame" x="15" y="111" width="89" height="18.5"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이주혁" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yro-Cw-yBT">
-                                                            <rect key="frame" x="0.0" y="0.0" width="31.5" height="14.5"/>
-                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
-                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yellowbar" translatesAutoresizingMaskIntoConstraints="NO" id="cpX-rP-XcD">
-                                                            <rect key="frame" x="0.0" y="14.5" width="65" height="4"/>
-                                                        </imageView>
-                                                    </subviews>
-                                                </stackView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="EEJ-6K-FEw" secondAttribute="trailing" constant="96" id="0UJ-b7-mt3"/>
-                                                <constraint firstItem="Sfm-7P-ykc" firstAttribute="leading" secondItem="vXC-Mx-Vvb" secondAttribute="leading" id="FFG-33-c5q"/>
-                                                <constraint firstItem="Sfm-7P-ykc" firstAttribute="top" secondItem="vXC-Mx-Vvb" secondAttribute="top" id="Fk2-0A-9O4"/>
-                                                <constraint firstAttribute="bottom" secondItem="7M5-ov-d65" secondAttribute="bottom" constant="28" id="XNh-V5-WjZ"/>
-                                                <constraint firstItem="7M5-ov-d65" firstAttribute="top" secondItem="Sfm-7P-ykc" secondAttribute="bottom" constant="13" id="aJN-Tk-As3"/>
-                                                <constraint firstAttribute="trailing" secondItem="Sfm-7P-ykc" secondAttribute="trailing" id="fgF-E0-2zk"/>
-                                                <constraint firstAttribute="trailing" secondItem="7M5-ov-d65" secondAttribute="trailing" constant="6" id="mHD-bJ-dax"/>
-                                                <constraint firstItem="EEJ-6K-FEw" firstAttribute="top" secondItem="vXC-Mx-Vvb" secondAttribute="top" constant="111" id="mtL-gj-omD"/>
-                                                <constraint firstItem="7M5-ov-d65" firstAttribute="leading" secondItem="vXC-Mx-Vvb" secondAttribute="leading" constant="7" id="oZS-J6-Syf"/>
-                                                <constraint firstItem="EEJ-6K-FEw" firstAttribute="leading" secondItem="vXC-Mx-Vvb" secondAttribute="leading" constant="15" id="pQg-bm-mfp"/>
-                                            </constraints>
-                                        </collectionViewCellContentView>
-                                        <size key="customSize" width="200" height="225"/>
-                                        <connections>
-                                            <outlet property="idImageView" destination="Sfm-7P-ykc" id="98i-ag-Bop"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SoptworkingHeader" id="nus-Qo-O1P">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="196"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="8Nh-mW-7BW">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="196"/>
-                                        </imageView>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AQ9-KO-qUc">
-                                            <rect key="frame" x="75" y="75.5" width="264" height="45"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SOPT + NETWORKING" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7yw-Cp-SkL">
-                                                    <rect key="frame" x="1.5" y="0.0" width="261" height="30"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                                    <color key="textColor" red="0.98823529409999999" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="A2U-6X-x0e">
-                                                    <rect key="frame" x="0.0" y="30" width="264" height="3"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="대학생 연합 IT 창업 동아리의 네트워킹을 위한 플랫폼입니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Zq-98-3au">
-                                                    <rect key="frame" x="12" y="33" width="240.5" height="12"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </stackView>
-                                    </subviews>
-                                    <color key="backgroundColor" red="0.98823529409999999" green="0.80392156859999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <constraints>
-                                        <constraint firstItem="AQ9-KO-qUc" firstAttribute="centerX" secondItem="nus-Qo-O1P" secondAttribute="centerX" id="6Mq-T9-TMf"/>
-                                        <constraint firstAttribute="bottom" secondItem="8Nh-mW-7BW" secondAttribute="bottom" id="g25-Sz-S0H"/>
-                                        <constraint firstItem="AQ9-KO-qUc" firstAttribute="centerY" secondItem="nus-Qo-O1P" secondAttribute="centerY" id="hRJ-O0-3aN"/>
-                                        <constraint firstItem="8Nh-mW-7BW" firstAttribute="top" secondItem="nus-Qo-O1P" secondAttribute="top" id="iN3-d2-VE2"/>
-                                        <constraint firstItem="8Nh-mW-7BW" firstAttribute="leading" secondItem="nus-Qo-O1P" secondAttribute="leading" id="kaX-B8-6n1"/>
-                                        <constraint firstAttribute="trailing" secondItem="8Nh-mW-7BW" secondAttribute="trailing" id="zS6-8Q-2a3"/>
-                                    </constraints>
-                                </collectionReusableView>
-                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="D6G-Iv-EAv" firstAttribute="top" secondItem="9FW-QO-gJM" secondAttribute="bottom" id="As6-Cy-hF4"/>
                             <constraint firstItem="9FW-QO-gJM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="B6h-HN-EHt"/>
                             <constraint firstItem="9FW-QO-gJM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FWl-92-u9W"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="D6G-Iv-EAv" secondAttribute="bottom" id="GF4-2p-PKS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D6G-Iv-EAv" secondAttribute="trailing" id="Nma-oL-SA9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9FW-QO-gJM" secondAttribute="trailing" id="RgB-vf-Tdq"/>
-                            <constraint firstItem="D6G-Iv-EAv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zyk-rn-aEL"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="imageCollectionView" destination="D6G-Iv-EAv" id="U18-B0-aND"/>
                         <outlet property="profileBtn" destination="qhW-2d-QiB" id="nhk-cx-7cw"/>
                     </connections>
                 </viewController>
@@ -173,13 +62,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="4" width="264" height="3"/>
-        <image name="banner" width="375" height="420"/>
         <image name="soptLogo" width="62" height="23"/>
-        <image name="yellowbar" width="65" height="4"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

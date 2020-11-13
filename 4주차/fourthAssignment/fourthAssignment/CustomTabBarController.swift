@@ -10,10 +10,6 @@ import UIKit
 class CustomTabBarController: UITabBarController {
 //    guard let accountVC = self.storyboard?.instantiateViewController(identifier: "AccountViewController") as? AccountViewController
 //    guard let scrollVC = self.storyboard?.instantiateViewController(identifier: "ScrollViewController") as? ScrollViewController
-    
-    var name: String?
-    var part: String?
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()

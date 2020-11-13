@@ -38,22 +38,22 @@ class LoginViewController: UIViewController {
     }
     
     @objc func keyboardWillShow(_ notification: Notification){
-        if verification {return}
-        if let keyboardFrame: NSValue = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue{
-            let keyboardRect = keyboardFrame.cgRectValue
-            let keyboardY = keyboardRect.origin.y
-            let space = self.standard.frame.origin.y
-            self.view.frame.origin.y -= 150
-            verification = true
+        if verification {
+            return
+            
+        }
+        else {
+            if let keyboardFrame = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue{
+                self.view.transform = CGAffineTransform(translationX: self.view.frame.origin.x, y:self.view.frame.origin.y - 150)
+                verification = true
+            }
         }
     }
 
     @objc func keyboardWillHide(_ notification: Notification){
         if let keyboardFrame: NSValue = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue{
             let keyboardRect = keyboardFrame.cgRectValue
-            let keyboardY = keyboardRect.origin.y
-            let space = self.standard.frame.origin.y
-            self.view.frame.origin.y += 150
+            self.view.transform = CGAffineTransform(translationX: self.view.frame.origin.x, y:self.view.frame.origin.y + 150)
             verification = false
         }
     }
@@ -81,8 +81,6 @@ class LoginViewController: UIViewController {
         
         self.presentingViewController?.dismiss(animated: true, completion: nil)
     }
-    
-
 }
 
 extension LoginViewController: UITextFieldDelegate{
